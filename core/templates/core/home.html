@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - Kitchen Garden{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center bg-cover text-white" style="background-image: url('{% static 'images/home.jpg' %}');">
+    <h2>Welcome to Kitchen Garden!</h2>
+    <p>Explore our wide range of seeds and supplies for your home garden.</p>
+    <a href="/seeds" class="btn btn-success btn-lg">Shop Now</a>
+</div>
+<div class="row mt-4">
+    <div class="col-md-4">
+        <h3>High-Quality Seeds</h3>
+        <p>Discover our selection of premium seeds for your home garden.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Gardening Supplies</h3>
+        <p>Find the best tools and supplies to keep your garden thriving.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Expert Advice</h3>
+        <p>Read our articles and tips for successful gardening.</p>
+    </div>
+</div>
+{% endblock %}
